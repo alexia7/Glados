@@ -1,0 +1,46 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get upgrade -y
+          sudo apt-get update -y
+          sudo apt-get install -y libgmp-dev
+
+      - name: Setup Haskell
+        uses: actions/setup-haskell@v1.1.4
+        with:
+          ghc-version: 8.8.4
+          enable-stack: true
+          stack-version: 2.9.3
+
+      - name: Build and package glados executable
+        run: |
+          make
+          make test_run
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            glados
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get Release URL
+        run: |
+          echo "Release URL: ${{ steps.create_release.outputs.upload_url }}"

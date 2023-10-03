@@ -1,0 +1,37 @@
+name: Haskell CI
+
+on:
+  push:
+    branches:
+      - test-ci
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get upgrade -y
+          sudo apt-get update -y
+          sudo apt-get install -y libgmp-dev
+
+      - name: Setup Haskell
+        uses: actions/setup-haskell@v1.1.4
+        with:
+          ghc-version: 8.8.4
+          enable-stack: true
+          stack-version: 2.9.3
+
+      - name: Build and Test
+        run: |
+          make
+          make test_run
