@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*.*"
+    branches:
+      - main
 
 jobs:
   build:
@@ -40,6 +42,8 @@ jobs:
             glados
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
 
       - name: Get Release URL
         run: |
