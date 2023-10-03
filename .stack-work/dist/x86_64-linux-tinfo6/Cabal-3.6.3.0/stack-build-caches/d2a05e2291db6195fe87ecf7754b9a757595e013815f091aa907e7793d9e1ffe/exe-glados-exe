@@ -1,0 +1,18 @@
+/home/alexia/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.5/lib/ghc-9.2.5/include/ghcversion.h:
+  hash: 8ef6e3cecb29aca3884134f57ae55f780b89ff0e4491f9e76cec81b39be34fe6
+? /home/alexia/00-Tek3/01-Projects/Glados/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/glados-exe/autogen/Paths_glados.hs
+: hash: 1d81cd8b49e8463b83e74372a9f384f6a49e77edef4ccaa1701b9d4975a0de05
+? /home/alexia/00-Tek3/01-Projects/Glados/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/glados-exe/autogen/cabal_macros.h
+: hash: 9c1dd31226911812a11beea848f3ed0acc42bad43d7b05cb86afb97b5f002626
+/home/alexia/00-Tek3/01-Projects/Glados/CHANGELOG.md:
+  hash: 4d85df12512a6ad5ddd9945f0107001cb66a4e7dc1eb4c74ed8c092ebead7622
+/home/alexia/00-Tek3/01-Projects/Glados/README.md:
+  hash: 67376d05e5f0590deb8934c582d2757db425c9ce957ed5a09463c3f92651422a
+/home/alexia/00-Tek3/01-Projects/Glados/app/Main.hs:
+  hash: 99557f1eedde626af9e9bf5bbd05b8acd7d299c8bdc975410c9344bdae4c3df6
+/home/alexia/00-Tek3/01-Projects/Glados/glados.cabal:
+  hash: aebc46e976f65bb5c60aa7212af5b624da2793c972642cf74e6aa77421b32384
+/home/alexia/00-Tek3/01-Projects/Glados/package.yaml:
+  hash: d4ee34ebc97e3cc93a9ff6c4e2b851341417c7b7b7e80dc0b0e1d4ccce210c71
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
