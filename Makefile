@@ -12,13 +12,18 @@ all:
 	stack build
 	cp "$(BINARY_PATH)/bin/$(NAME)-exe" ./$(NAME)
 
-test_run:
+unittest_run:
 	stack test
+
+functest_run:
+	python3 test/functionnal_test.py
 
 clean:
 	stack clean
 
 fclean: clean
+	@ rm -rf *.go
+	@ rm -rf Lisp/*.go
 	$(RM) $(NAME)
 
 re: fclean all

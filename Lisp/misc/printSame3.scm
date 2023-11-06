@@ -1,0 +1,6 @@
+(define foo [String "Hello"])
+(define bar [String "World"])
+(if (== foo bar) 
+    (Print [String "Same"]) 
+    (Print [String "Not Same"])
+)

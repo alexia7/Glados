@@ -1,1 +1,1 @@
-(* foo 2)
+(* [String "foo"] [Int 2])

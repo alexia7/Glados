@@ -1,4 +1,4 @@
-(define foo 42)
-(if (< foo 10)
-    (* foo 3)
-    (div foo 2))
+(define foo [Int 42])
+(if (< foo [Int 10])
+    (* foo [Int 3])
+    (div foo [Int 2]))

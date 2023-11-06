@@ -1,2 +1,2 @@
-(define foo 21)
-(* foo 2)
+(define foo [Int 21])
+(* foo [Int 2])

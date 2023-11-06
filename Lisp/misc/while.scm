@@ -1,0 +1,6 @@
+(define x [Int 0])
+(while (eq? x [Int 10])
+    (+ x [Int 1])
+    (print x)
+)
+(print [String "Done"])

@@ -1,3 +1,4 @@
-(define (add a b)
+((define (add a:Int b:Int)
     (+ a b))
-(add 3 4)
+(add [Int 3] [Int 4])
+)

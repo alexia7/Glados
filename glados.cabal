@@ -25,8 +25,19 @@ source-repository head
 
 library
   exposed-modules:
+      ArgHandling
+      AST
+      BCgeneration
+      Bytecode
+      BytecodeParsing
+      Expression
       Lib
+      ProcessAll
+      ProcessCompilater
+      ProcessEvaluation
       TestFunc
+      Tokenizer
+      VirtualMachine
   other-modules:
       Paths_glados
   hs-source-dirs:
