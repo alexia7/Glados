@@ -34,4 +34,5 @@ jobs:
       - name: Build and Test
         run: |
           make
-          make test_run
+          make unittest_run
+          make functest_run
